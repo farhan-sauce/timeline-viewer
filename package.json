@@ -15,8 +15,7 @@
     "generate-sw-prod": "npm run generate-sw && npm run commit-sw",
     "checkout-sw": "git checkout docs/service-worker.js",
     "commit-sw": "if [ -n \"$(git status --porcelain -uno)\" ]; then git commit -am \"generate service-worker\"; fi",
-    "deploy": "gh-pages -d docs",
-    "publish-demo": "npm run generate-sw && npm run deploy"
+    "deploy": "npm run generate-sw && gh-pages -d docs"
   },
   "author": "Paul Irish",
   "license": "Apache-2.0",
